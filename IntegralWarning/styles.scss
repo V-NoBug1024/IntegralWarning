@@ -1,0 +1,134 @@
+:global {
+    .integral-warning {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        margin: 10px 10px 0px 10px;
+        // background-color: palegoldenrod;
+        .text-top {
+            .info-text {
+                background-color: #fff;
+                min-height: 80px;
+                margin-bottom: 10px;
+                padding-bottom: 8px;
+                .text {
+                    padding: 5px 10px 0px 10px;
+                }
+                .tip {
+                    margin: 10px 10px 0px 10px;
+                    background-color: #ebf6ff;
+                    color: #158fff;
+                    padding: 5px;
+                    border-radius: 4px;
+                }
+            }
+            .list {
+                background-color: #fff;
+                margin-bottom: 10px;
+                // max-height: 210px;
+                padding-bottom: 10px;
+                .text {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 10px 0px 10px;
+                    color: #a1a1a1;
+                }
+                .more {
+                    margin-top: 10px;
+                    color: #158fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .input-text {
+                background-color: #fff;
+                min-height: 80px;
+                margin-bottom: 10px;
+                > h4 {
+                    padding: 5px 10px 5px 10px;
+                }
+                .check-box-text {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0px 10px 5px 10px;
+                }
+                .check-box {
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    > span {
+                        padding-right: 5px;
+                    }
+
+                    .am-list-item {
+                        min-height: 24px;
+                    }
+                    .am-list-item.am-input-item {
+                        width: 60px;
+                        border: 1px solid #ccc;
+                        height: 24px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                    .am-list-item .am-input-control input {
+                        font-size: 14px;
+                        width: auto;
+                    }
+                }
+                .check_tip{
+                    margin: 10px 10px 10px 10px;
+                    background-color: #ebf6ff;
+                    color: #158fff;
+                    padding: 5px;
+                    border-radius: 4px;
+                }
+                .text-area {
+                    padding: 0px 10px 5px 10px;
+                    .am-list-item {
+                        background-color: #f6f6f6;
+                        border-radius: 8px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                    }
+                    .am-textarea-control textarea {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .am-button-ghost::before {
+            border-radius: 50px;
+            border: 1px solid #979797;
+        }
+        .am-button-ghost.am-button-disabled::before {
+            border-radius: 50px;
+            border: 1px solid #cccccc;
+        }
+
+        .submit {
+            border-radius: 22px;
+            margin-bottom: 10px;
+            min-height: 44px;
+        }
+        .disabled-submit {
+            border-radius: 22px;
+            margin-bottom: 10px;
+            min-height: 44px;
+
+            .am-button-primary {
+                background-color: #ccc;
+                color: #fff;
+                &::before {
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .integral-radius {
+        border-radius: 8px;
+    }
+}
